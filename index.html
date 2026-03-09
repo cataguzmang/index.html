@@ -152,8 +152,8 @@ function addMessage(sender, text, type) {
  div.className = `message ${type}`;
  
  // 👇 AQUÍ CAMBIAS LOS NOMBRES
- const userLabel = "👤 Usuario";     // ← CAMBIA "Tú" por esto
- const aiLabel = "🧠 DeepSeek";      // ← CAMBIA "🤖 IA" por esto
+ const userLabel = "Usuario";     // ← CAMBIA "Tú" por esto
+ const aiLabel = "DeepSeek";      // ← CAMBIA "🤖 IA" por esto
  
  div.innerHTML = `<strong>${type === 'user' ? userLabel : aiLabel}:</strong> ${text.replace(/\n/g, '<br>')}`;
  chat.appendChild(div);
